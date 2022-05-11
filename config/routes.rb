@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # ======================
 
   get("/zodiacs/:star_sign", { :controller => "zodiac", :action => "horoscope" })
-
+=begin
   get("/zodiacs/aries", { :controller =>  "fire", :action =>  "ram" })
   get("/zodiacs/leo", { :controller => "fire", :action => "lion" })
   get("/zodiacs/sagittarius", { :controller => "fire", :action => "archer" })
@@ -26,12 +26,13 @@ Rails.application.routes.draw do
   get("/zodiacs/cancer", { :controller => "water", :action => "crab" })
   get("/zodiacs/scorpio", { :controller => "water", :action => "scorpion" })
   get("/zodiacs/pisces", { :controller => "water", :action => "fish" })
-
+=end
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
 
   get("/roll/:num_dice/:num_sides", { :controller => "dice", :action => "roll" })
-    
+
+=begin
   get("/roll/1/6", { :controller => "dice", :action => "one_six" })
   get("/roll/2/6", { :controller => "dice", :action => "two_six" })
   get("/roll/3/6", { :controller => "dice", :action => "three_six" })
@@ -54,4 +55,5 @@ Rails.application.routes.draw do
   get("/roll/1/20", { :controller => "dice", :action => "one_twenty" })
   get("/roll/2/20", { :controller => "dice", :action => "two_twenty" })
   get("/roll/3/20", { :controller => "dice", :action => "three_twenty" })
+=end
 end
